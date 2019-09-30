@@ -1,0 +1,1318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>KEN-About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Minimal Bootstrap Theme">
+    <meta name="keywords" content="onepage,responsive,minimal,bootstrap,theme">
+    <meta name="author" content="">
+
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/jpreloader.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="css/plugin.css" type="text/css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.transitions.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- custom style css -->
+    <link rel="stylesheet" href="css/custom-style.css" type="text/css">
+    <link rel="stylesheet" href="css/mainresponsivenav.css" type="text/css">
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="css/color.css" type="text/css">
+
+    <!-- revolution slider -->
+    <link rel="stylesheet" href="rs-plugin/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="css/rev-settings.css" type="text/css">
+
+    <!-- load fonts -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="fonts/elegant_font/HTML_CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="fonts/et-line-font/style.css" type="text/css">
+    <style>
+        #owl-demo .item {
+            background: #42bdc2;
+            padding: 30px 0px;
+            margin: 10px;
+            color: #FFF;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .modal-backdrop.in {
+            opacity: 0.92 !important;
+        }
+
+        .modal.fade.in {
+            top: 90px;
+        }
+
+        .modal {
+            overflow-y: hidden !important;
+        }
+
+        .modal-lg {
+            width: 70% !important;
+            height: 390px;
+            background: #111111;
+            border: 10px solid #ccc;
+        }
+
+        .close {
+            background: url("images/close_btn.png") repeat scroll 0 0 !important;
+            height: 30px;
+            margin: 0;
+            width: 30px;
+            float: right;
+            position: relative;
+            margin: -12px -40px;
+        }
+
+            .close:hover {
+                background-position: 0 -30px !important;
+            }
+
+        .modal-header .close {
+            margin-top: -5% !important;
+            margin-right: -5% !important;
+        }
+
+        .modal-header {
+            padding: 15px;
+            border-bottom: none !important;
+        }
+
+        .modal-content {
+            background-clip: padding-box;
+            background-color: inherit !important;
+            border: none !important;
+            border-radius: 0px !important;
+            box-shadow: none !important;
+            outline: 0 none;
+            position: relative;
+        }
+
+        .modal-body {
+            padding: 0px !important;
+        }
+
+        .modal-body {
+            position: relative;
+            padding: 0px;
+        }
+
+        .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+            color: #F06807 !important;
+        }
+
+        .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color: orange;
+            outline: 0;
+        }
+
+        .panel-default > .panel-heading {
+            color: #333;
+            background-color: #c9c9c9 !important;
+            border-color: #ddd;
+        }
+
+        #Numberlist.dropdown-menu {
+            min-width: 670px;
+            margin-left:-220%;
+        }
+
+        #Numberlist a {
+            padding: 0px 2px;
+            color: #F06807 !important;
+        }
+
+        .dropdown-menu {
+            padding: 0px !important;
+            font-size: 12px !important;
+        }
+
+            .dropdown-menu > li > a {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.428571429;
+                color: #fff !important;
+                white-space: nowrap;
+            }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+            color: #fff!important;
+            cursor: default;
+            background-color: #F06807 !important;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+        }
+
+        .nav-tabs > li > a:focus, .nav-tabs > li > a:hover {
+            background-color: #888 !important;
+            color: #fff !important;
+        }
+        .nav-tabs {
+            border-bottom: 1px solid #fff;
+        }
+
+        .classnav {
+            padding-left: 20% !important;
+            margin-bottom: 0;
+            list-style: none;
+            margin: 0px auto;
+            padding-right: 20% !important;
+        }
+        .nav-tabs > li > a {
+            margin-right: 2px;
+            line-height: 1.428571429;
+            border: 1px solid transparent;
+            border-radius: 4px 4px 0 0;
+            color: #909090 !important;
+        }
+
+            /*test;;;;;;;;;;;;;;;;;;;;;*/
+        #exTab1 .tab-content {
+            color: white;
+            background-color: #428bca;
+            padding: 5px 15px;
+        }
+
+        #exTab2 h3 {
+            color: white;
+            background-color: #428bca;
+            padding: 5px 15px;
+        }
+
+        /* remove border radius for the tab */
+
+        #exTab1 .nav-pills > li > a {
+            border-radius: 0;
+        }
+
+        /* change border radius for the tab , apply corners on top*/
+
+        #exTab3 .nav-pills > li > a {
+            border-radius: 4px 4px 0 0;
+        }
+
+        #exTab3 .tab-content {
+            color: white;
+            background-color: #428bca;
+            padding: 5px 15px;
+        }
+
+
+        .boxVideo {
+            box-shadow: 0px 0px 6px 2px #888;
+            padding: 6px 7px 0px 7px;
+        }
+
+        .featured-item-2 {
+          
+            background: #ffffff;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: block;
+           height:450px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s;
+            padding: 10px 10px;
+        }
+
+
+        @media only screen and (max-width: 360px) {
+
+            #Numberlist.dropdown-menu {
+                min-width:0px;
+                margin-left:0%;
+            }
+            .navbar-nav .open .dropdown-menu {
+                position: static;
+                float: none;
+                width: auto;
+                margin-top: 0;
+                background-color: white;
+                border: 0;
+                box-shadow: none;
+            }
+
+            #Numberlist a {
+                padding: 0px 2px;
+                color: #fff !important;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body id="homepage">
+
+    <!-- End of Splash Screen -->
+
+
+    <div id="wrapper">
+        <div class="page-overlay">
+        </div>
+
+
+        <!-- header begin -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+
+                        <div class="navbar-header">
+                            <h1 id="logo">
+                                <a href="index.html">
+                                    <img class="logo-1" src="images/images-slider/Ken_logo.png" alt="">
+                                    <img class="logo-2" src="images/Ken_logo.png" alt="">
+                                </a>
+                            </h1>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                        </div>
+
+                        <div class="collapse navbar-collapse col-md-8 pullright_my" id="myNavbar">
+                            <ul class="nav navbar-nav" id="mystylemenu">
+                                <li><a href="omnidel.html">OmniDEL™</a></li>
+                                <li><a href="omniversity.html">Omniversity</a></li>
+                                <li><a href="omnimart.html">Omnimart</a></li>
+                                
+                                <li class="dropdown">
+
+                                    <a href="about us.html" data-toggle="collapse" class="dropdown-toggle" style="background-color:inherit!important; color: #F06807 !important;">About <br/><b style="margin-top:-29px" class="caret"></b></a>
+
+                                    <ul class="dropdown-menu list-inline" id="Numberlist" style="margin-top:-42px">
+
+                                        <li class="scroll active"><a style="color: #F06807 !important;" href="#section-services">Our Organization</a></li>
+                                        <li class="scroll"><a style="color: #F06807 !important;" href="#Model">Our Business Model</a></li>
+                                        <li class="scroll"><a style="color: #F06807 !important;" href="#founder">Our Founder</a></li>
+                                        <li class="scroll"><a style="color: #F06807 !important;" href="#content">Our People </a></li>
+                                        <!--<li class="scroll"><a style="color: #F06807 !important;" href="#Livelihood">Life skill with Livelihood</a></li>-->
+                                    </ul>
+
+                                </li>
+
+
+
+
+                                <li><a href="startlearning.html">Start Learning</a></li>
+                                <li><a href="startearning.html">Start Earning</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- revolution slider begin -->
+        <div>
+            <img src="images/About.jpg" style=" width:100%" data-src="" alt="Second    slide">
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="spacer-single"></div>
+        <div class="spacer-single"></div>
+        <div id="section-services">
+       
+            <div class="text-center section-portfolio">
+                <h1 class="">
+                    <span style="background:#fff;">
+                        Our <span class="id-color">Organization</span>
+                        <span class="small-border animated" data-animation="fadeInUp"></span>
+                    </span>
+                </h1>
+            </div>
+
+            <div class="spacer-single"></div>
+            <div id="exTab2" class="container">
+                <ul class="nav nav-tabs classnav">
+                    <li class="active">
+                        <a href="#1" data-toggle="tab">KarmYog For 21st Century</a>
+                    </li>
+                    <li>
+                        <a href="#2" data-toggle="tab">KarmYog Foundation</a>
+                    </li>
+                    <li>
+                        <a href="#3" data-toggle="tab">KarmYog Education Network</a>
+                    </li>
+                </ul>
+                <div class="spacer-single"></div><div class="spacer-single"></div>
+                <div class="tab-content ">
+                    <div class="tab-pane active" id="1">
+
+
+                        <div class="feature-box-small-icon animated featured-item-2 fadeInUp" data-animation="fadeInUp" data-delay="200" style="opacity: 0;">
+                       
+                            <img src="images/About_Us/KY21C23.jpg" class="img-responsive col-md-6" alt="">
+                            <div class="text col-md-6">
+
+                                <p>
+                                    Karmyog For 21 <sup>st</sup> Century is a movement propelled by visionary educationist shri sourabh j. sarkar that 
+                                    strivesto melt the growing wall between the professional and the personal spheres of life. 
+                                    A wall that detaches our sense of ‘being’, into roles of ‘doing’ and violently fractures the sense of wholesomeness.
+                                    Ky21c uses work life as a path for personal growth …and personal growth as a path for developing work life by 
+                                    combining the best of the ancient with that of the modern. It draws upon the eternal values of Karm-Yog and applies it into the context of
+                                     our 21<sup>st</sup> century work-life.Ky21c functions through three of its essentially diverse yet powerfully adjoined pillars- 
+                               <br/> KarmYog Foundation,<br/> KarmYog for 21 <sup>st</sup><br/>Karmyog Education Network<br/> which combines to create the KarmYog Ecosystem. At the heart of the movement is a focus on Life- skill that would bring about positive transformations in the way education addresses the process of human development and ultimately democratize education for all.
+                                </p>
+
+                            </div>
+                          
+                        </div>
+
+                    </div>
+                    <div class="tab-pane col-md-12" id="2">
+                        <div class="feature-box-small-icon animated featured-item-2 fadeInUp" data-animation="fadeInUp" data-delay="200" style="opacity: 0;">
+                         
+                            <img src="images/About_Us/Karmyog_Foundation3.jpg" class="img-responsive col-md-6" alt="">
+                            <div class="text col-md-6">
+                                <p>
+                                    KarmYog Foundation is a charitable institution dedicated to the personal and professional development of Mankind. The Foundation is inspired by the principles of KarmYog for the 21st Century or KY21C. KarmYog Foundation is the tool through which ky21c reaches out to those living in the fringes of every section of society and ushers them into the realm of inclusive growth.One of the primal goal of the foundation is to democratise education for one and all. For the last 25 years, the foundation has been involved in imparting mass literacy across various sectors and underprivileged target groups. KarmYogGunakuland Karmyog Ashramare the two prominent manifestations of the KamYog Foundation
+                                    <br />
+                                    <a style="float:left;" href="http://vidyapeeth.karmyog21c.in/" class="btn btn-border">karmYog Gunakul <br />Visit</a>
+
+                                    <a style="margin-left: 20px;" href="http://ashram.karmyog21c.in/" class="btn btn-border">KarmYog Ashram<br />Visit </a>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="tab-pane" id="3">
+                        <div class="feature-box-small-icon animated featured-item-2 fadeInUp" data-animation="fadeInUp" data-delay="200" style="opacity: 0;">
+                            <img src="images/ken_logo-2.png" class="img-responsive col-md-6" alt="">
+
+                            <div class="text col-md-6">
+                                <p>KarmYog Education Network is an ecosystem of Focused Learning Companies founded by visionary educationist and life skill expert MahacharyaShri sourabh J sarkar and Los Angeles based renowned child psychologist Dr.Chuck Schreiner. In a venture like this, the stakeholders are able to include yet transcend their personal interests, by organizing, creating and managing a business that solves a social problem- ‘How to make education affordable for one and all?.Here profit is uniquely seen as an essential enabler for running and growing the business, and not as a means for the owners to garner personal wealth. The primary goal of KarmYog Education Network is to contribute to the process of manifesting the good, the true and the beautiful.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="Model">
+            <div class="container">
+
+                <div class="col-md-6 col-md-offset-3 text-center" style="margin-top:10%;">
+                    <h1 class="animated" data-animation="fadeInUp">
+                       Our <span class="id-color">Business Model </span>
+                        <span class="small-border animated" data-animation="fadeInUp"></span>
+                    </h1>
+
+                   
+                </div>
+
+            </div>
+            <div>
+                <div class="col-md-12 no-padding" style="background-color:#ccc;">
+                    <div class="animated" data-animation="fadeInLeft" data-delay="0">
+                        <img style="padding:22px;" class="col-md-8 no-padding img-responsive" src="images/About_Us/Business_Model.jpg" alt="" />
+                    </div>
+
+
+                    <div class="">
+                        <div class="col-md-4  animated" data-animation="fadeInRight" data-delay="200">
+                            <h4>Our Business Model</h4>
+                            <p class="intro" style="color: black;line-height:25px;">
+                                “KarmYog for 21st Century is a movement
+                                dedicated to making quality education
+                                affordable for all. This is done through its three-pillared business model –
+                                OmniDEL <sup>TM </sup>, OmniVarsity<sup>TM </sup> and OmniMartTM.
+                                While OmniDEL<sup>TM </sup> ensures quality education
+                                distributed through OmniVarsityTM,
+                                OmniMart <sup>TM </sup> works towards making it affordable.
+                                OmniMart <sup>TM </sup> creates a revenue stream based on
+                                the products and services that emerge largely through
+                                the learning and development process; and when these
+                                products and services are offered to the market,
+                                they actually bring in value that helps to subsidize
+                                the cost of providing quality education and development.
+                                This makes quality learning affordable and and in the process truly democratizes
+                                education itself. Now this of course is the vision...
+                                and we have started moving steadfast towards
+                                realizing this dream at<span style="float:right;"> <br/> KarmYog Green Village”.
+                               <br/> Shri sourabh J. sarkar<br/>
+                                Param Sevak, KarmYog Foundation<br/></span>
+
+                             </p>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                <div class="spacer-single"></div>
+                <div class="container"><iframe src="https://www.youtube.com/embed/2KAANw_w8wo" style="width:100%; height:500px;" allowfullscreen="" id="fitvid403955" frameborder="0"></iframe></div>
+            </div>
+            </div>
+
+        <div class="spacer-single"></div>
+        <div class="spacer-single"></div>
+       
+            <div id="founder" class="no-bottom">
+                <div class="spacer-single"></div>
+                <div class="spacer-single"></div>
+                <div class="container">
+                   
+                    <h1>
+                        Our<span class="id-color">Founder</span>
+                        <span class="small-border animated" data-animation="fadeInUp"></span>
+                    </h1>
+
+
+                    <!-- portfolio filter begin -->
+                    <!--<div class="row">
+                        <div class="col-md-12 text-center">
+                            <ul id="filters" class="animated" data-animation="fadeInUp" data-delay="200">
+                                <li><a href="#" data-filter="*" class="selected">All Campus</a></li>
+                                <li><a href="#" data-filter=".illustration">MDL</a></li>
+                                <li><a href="#" data-filter=".mobile">karmyog Green village</a></li>
+                                <li><a href="#" data-filter=".website">JAAAGO Learning Clubs</a></li>
+                                <li><a href="#" data-filter=".photography">Other learning space</a></li>
+                                <li><a href="#" data-filter=".website2">Pan India Network</a></li>
+                            </ul>
+                        </div>
+                    </div>-->
+                    <!-- portfolio filter close -->
+                </div>
+                <div id="gallery" class="gallery full-gallery de-gallery pf_full_width animated" data-animation="fadeInUp" data-delay="200">
+
+                    <!-- gallery item -->
+                    <div class="item illustration">
+                        <div class="picframe">
+                            <span class="overlay">
+
+                                <span class="icon">
+                                    <i class="fa fa-align-justify fa-external-link icon-info" data-value="journey.html"></i>
+                                </span>
+                                <span class="pf_text">
+                                    <span class="project-name">His Journey</span>
+                                    <span>Details</span>
+                                </span>
+                            </span>
+
+                            <img src="images/About_Us/His_Journey_527X450.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- close gallery item -->
+                    <!-- gallery item -->
+                    <div class="item mobile">
+                        <div class="picframe">
+                            <span class="overlay">
+
+                                <span class="icon">
+                                    <i class="fa fa-align-justify fa-external-link icon-info" data-value="sjs.html"></i>
+                                </span>
+                                <span class="pf_text">
+                                    <span class="project-name">The Founder</span>
+                                    <span>Details</span>
+                                </span>
+                            </span>
+
+                            <img src="images/About_Us/The_Founder.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- close gallery item -->
+                    <!-- gallery item -->
+                    <div class="item website">
+                        <div class="picframe">
+                            <span class="overlay">
+
+                                <span class="icon">
+                                    <i class="fa fa-align-justify fa-external-link icon-info" data-value="soluation.html"></i>
+                                </span>
+                                <span class="pf_text">
+                                    <span class="project-name">Towards the Solution</span>
+                                   
+                                    <span>Details</span>
+                                </span>
+                            </span>
+
+                            <img src="images/About_Us/Towards_The_Solution_527X200.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- close gallery item -->
+                    <!-- gallery item -->
+                    <div class="item photography ">
+                        <div class="picframe">
+                            <span class="overlay">
+
+                                <span class="icon">
+                                    <i class="fa fa-align-justify fa-external-link icon-info" data-value="problem.html"></i>
+                                </span>
+                                <span class="pf_text">
+                                    <span class="project-name">The Problem</span>
+                                    <span>Details</span>
+                                </span>
+                            </span>
+                            <img src="images/images-slider/campus/learning.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <!-- close gallery item -->
+                    <!-- gallery item -->
+
+
+
+
+                    <div class="item website2 ">
+                        <div class="picframe">
+                            <span class="overlay">
+
+                                <span class="icon">
+                                    <i class="fa fa-align-justify fa-external-link icon-info" data-value="epiphany.html"></i>
+                                </span>
+                                <span class="pf_text">
+                                    <span class="project-name">The Epiphany</span>
+                                    <span>Details</span>
+                                </span>
+                            </span>
+                            <img src="images/About_Us/The_Epiphany_527X250.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- close gallery item -->
+                    <!-- gallery item -->
+
+
+                </div>
+
+                <div id="loader-area">
+                    <div class="project-load"></div>
+                </div>
+            </div>
+            <!-- gallery 2 -->
+            <!-- section begin -->
+
+        <div id="content">
+            <div id="community">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="spacer-single"></div>
+                            <div class="spacer-single"></div>
+
+                            <h1>
+                                Our<span class="id-color">People</span>
+                                <span class="small-border animated" data-animation="fadeInUp"></span>
+                            </h1>
+                        </div>
+                    </div>
+                    <ul id="filterst" class="community-filter text-center">
+                        <li class="comm"><a class="btn btn-default active " data-filter="*">All</a></li>
+                        <li class="comm"><a class="btn btn-default" data-filter=".html">Flag Bearers</a></li>
+                        <li class="comm"><a class="btn btn-default" data-filter=".wordpress">Team Leaders</a></li>
+                        <li class="comm"><a class="btn btn-default" data-filter=".megento">Experts & Luminaries</a></li>
+                        <li class="comm"><a class="btn btn-default " data-filter=".megento2">Friends & Donors</a></li>
+                        <li class="comm"><a class="btn btn-default " data-filter=".megento3">Partners & Sponsors</a></li>
+
+                    </ul><!--/#portfolio-filter-->
+                    <div class="community-items">
+                        <div class="col-sm-3 col-xs-12 community-item html">
+                            <div class="view efffect">
+                                <div class="portfolio-image">
+                                    <img src="images/Thumb/sjs.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/sjs.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item html">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Reena.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Reena.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+                                        <!--<i class="fa fa-search-plus"></i>-->
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item html">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Chuck.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Chuck.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item html">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Ram.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Rum.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item html">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Anto.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Anto.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item html">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Priyesh.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Priyesh.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item wordpress">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Abhisek.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Abhisek.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item wordpress">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Angshuman.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Angshuman.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item wordpress">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Neha.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Neha.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item wordpress">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Jahangir.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Jahangir.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item wordpress">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Nabarun.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Nabarun.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/sanker.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Shankir.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Shyam Benegal.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Shyam_Benegal.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Prabir.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Pabir.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Kavita.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Kavita.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Hariharan.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Hariharan.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Alka.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Alka.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Salim.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Salim.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Bikram.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Bickram.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--/*start friend ...................................................................................................*/-->
+                        <div class="col-sm-3 col-xs-12 community-item megento2">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Nandu-Kulkarni.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Nandu-Kulkarni.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento2">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Deep-Kalra.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Deep-Kalra.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento2">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Philip-Wolf.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Philip-Wolf.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento2">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Sharmistha.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Sharmistha-Dubey.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento2">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Vinod-Achi.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Vinod-Achi.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 col-xs-12 community-item megento">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Syama.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Syama.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 col-xs-12 community-item megento2">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Pratima.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Pratima.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 community-item megento2">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Neeta.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Neeta.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 col-xs-12 community-item megento2">
+                            <div class="view efffect">
+                                <div class="community-image">
+                                    <img src="images/Thumb/Piya.jpg" alt="">
+                                </div>
+                                <a href="images/Normal/Priya.jpg" data-gallery="prettyPhoto">
+                                    <div class="mask text-center">
+                                        <br /><br />
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--       Partners        -->
+
+                    </div>
+                </div>
+
+            </div>
+
+</div>
+
+            <div class="spacer-single"></div>
+
+            <!--<section id="content">
+            <h1>
+                Business Model with <span class="id-color"> ‘The Three Way Impact’</span>
+                <span class="small-border animated" data-animation="fadeInUp"></span>
+            </h1>
+            <section id="section-portfolio2" class="no-bottom">
+                <div class="spacer-single"></div>
+                <div id="gallery2" class="gallery full-gallery de-gallery pf_full_width animated" data-animation="fadeInUp" data-delay="200">
+
+                    <div class="item mobile">
+                        <div class="picframe">
+                            <span class="overlay">
+                                <span class="icon">
+                                    <a href="images/portfolio/omnidel.jpg" data-type="prettyPhoto[gallery]"></a>
+                                </span><span class="icon">
+                                    <i class="fa fa-align-justify fa-external-link icon-info" data-value="del.html"></i>
+                                </span>
+                                <span class="pf_text">
+                                    <span class="project-name">OmniDEL™</span>
+
+                                </span>
+                            </span>
+                            <img src="images/portfolio/omnidel.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="item illustration">
+                        <div class="picframe">
+                            <span class="overlay">
+                                <span class="icon">
+                                    <a href="images/portfolio/omniversity.jpg" data-type="prettyPhoto[gallery]"></a>
+                                </span>
+                                <span class="icon">
+                                    <i class="fa fa-align-justify fa-external-link icon-info" data-value="sity.html"></i>
+                                </span>
+                                <span class="pf_text">
+                                    <span class="project-name">Omniversity</span>
+
+                                </span>
+                            </span>
+                            <img src="images/portfolio/omniversity.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="item  photography">
+                        <div class="picframe">
+                            <span class="overlay">
+                                <span class="icon">
+                                    <a href="images/portfolio/omnimart.jpg" data-type="prettyPhoto[gallery]"></a>
+                                </span><span class="icon">
+                                    <i class="fa fa-align-justify fa-external-link icon-info" data-value="mart.html"></i>
+                                </span>
+                                <span class="pf_text">
+                                    <span class="project-name">Omnimart</span>
+
+                                </span>
+                            </span>
+                            <img src="images/portfolio/omnimart.jpg" alt="" />
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="clearfix"></div>
+                <div id="loader-area2">
+                    <div class="project-load"></div>
+                </div>
+            </section>
+            </section>-->
+            <!--<section id="Livelihood">
+            <div class="text-center">
+                <h1 class="animated" data-animation="fadeInUp">
+
+                    Integrating<span class="id-color"> Lifeskill with Livelihood </span>
+                    <span class="small-border animated" data-animation="fadeInUp"></span>
+                </h1>
+                <div class="spacer-single"></div>
+                <img src="images/images-slider/supravat.jpg" class="img-responsive">
+            </div>
+            <div class="spacer-single"></div>
+            <section id="section-about">
+
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <p class="text-center">Mahacharya shri sourabh J sarkar believes in bridging the gap between the personal and the professional is the solution to crucial professional and wellbeing issues like absenteeism, ill health, stress, corruption in business ethics, apathy towards system and processes etc. To achieve this is focussed on integrating lifeskill with livelihood through a Behtar Life Initiative that he personally conducts nationwide. The idea is to awaken learners to what he calls- 'THE GOOD, THE TRUE, THE BEAUTIFUL'</p>
+
+                    <div class="clearfix"></div>
+                    <div class="spacer-single"></div>
+                    <div class="spacer-single"></div>
+
+
+
+                    <div class=""><iframe src="https://www.youtube.com/embed/2KAANw_w8wo" style="width:100%; height:500px;" allowfullscreen="" id="fitvid403955" frameborder="0"></iframe></div>
+                </div>
+
+            </section>
+            </section>-->
+            <div class="clearfix"></div>
+            <footer class="" style="background-image:url(images/background/footer-bg.jpg);">
+
+                <!--Footer Upper-->
+                <!--Two 4th column-->
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-lg-7 col-sm-6 col-xs-12 column">
+                            <div class="footer-widget about-widget" style="float:left;">
+                                <div class="logo" style="margin-top:-40px;"><a href="index.html"><img src="images/Karmyog_21c.png" class="img-responsive" alt=""></a></div>
+
+
+                                <ul class="contact-info" style="border-right:1px dotted #ccc">
+                                    <li class="commonfotter"><span class="icon fa fa-map-marker"></span>KarmYog 21c Technology Development <br /> Lab & Training Center<br />MB-231 KarmYog Ashram<br /> Sector-V, Salt Lake (E) <br />Kolkata, India 700102 </li>
+                                    <li class="commonfotter"><span class="icon fa fa-phone"></span>9051163800</li>
+                                    <li class="commonfotter"><span class="icon fa fa-envelope-o"></span>    reachus@karmyog21c.in</li>
+                                    <!--<li><span class="icon fa fa-eye"></span><a href="http://demo.karmyog21c.in/ken2/"><span style="color:#fff">Ken</span></a></li>-->
+                                </ul>
+
+                                <div class="social-links-two clearfix">
+                                    <a href="https://www.facebook.com/ky21c/?ref=bookmarks" class="facebook img-circle"><span class="fa fa-facebook"></span></a>
+                                    <a href="https://twitter.com/KolkataJaaago?s=08" class="twitter img-circle"><span class="fa fa-twitter"></span></a>
+                                    <a href="https://www.youtube.com/channel/UC5xwYeLGHqKmcjS5c28nCnw" class="google-plus img-circle"><span class="fa fa-youtube-play"></span></a>
+                                    <!--<a href="#" class="linkedin img-circle"><span class="fa fa-pinterest-p"></span></a>
+                                <a href="#" class="linkedin img-circle"><span class="fa fa-linkedin"></span></a>-->
+                                </div>
+
+                            </div>
+
+                            <div class="footer-widget about-widget" style="float:left;margin-top: 5%; margin-right: 10%;">
+
+
+
+                                <ul class="contact-info">
+                                    <li class="commonfotter">
+                                        <span class="icon fa fa-map-marker"></span> KarmYog Foundation<br />Action Area-1<br />
+                                        Newtown Rajarhat <br />Kolkata, India 700156
+                                    </li>
+                                    <li class="commonfotter"><span class="icon fa fa-phone"></span>9051163800</li>
+                                    <li class="commonfotter"><span class="icon fa fa-envelope-o"></span>    reachus@karmyog21c.in</li>
+                                    <!--<li><span class="icon fa fa-eye"></span><a href="http://demo.karmyog21c.in/ken2/"><span style="color:#fff">Ken</span></a></li>-->
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+
+                        <!--Footer Column-->
+                        <div class="col-lg-5 col-sm-6 col-xs-12 col-md-8 column">
+                            <h2 style="color:#f1f1f1;">About us</h2>
+                            <div class="footer-widget links-widget">
+
+                                <p>
+                                    <span style="font-weight:600;font-size: 16px;">
+                                        Welcome to KarmYog for 21<sup>st</sup> Century, a movement dedicated to personal and professional development of Mankind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--Two 4th column End-->
+                <!--Two 4th column-->
+
+
+
+
+
+                <div class="clearfix"></div>
+                <div class="footer-bottom">
+                    <div class="auto-container clearfix">
+                        <!--Copyright-->
+                        <div class="copyright text-center">&copy; karmyog All rights reserved </div>
+                    </div>
+                </div>
+
+            </footer>
+</div>
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jpreLoader.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/video.resize.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/designesia.js"></script>
+
+    <script>
+
+
+        $(document).ready(function () {
+
+            $("#owl-demo").owlCarousel({
+                navigation: true
+            });
+
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".dropdown-toggle").dropdown('toggle');
+
+            $(window).scroll(function (event) {
+                Scroll();
+            });
+
+            $('#Numberlist li a').click(function () {
+                $('html, body').animate({ scrollTop: $(this.hash).offset().top - 79 }, 1000);
+                return false;
+            });
+
+            // User define function
+            function Scroll() {
+                var contentTop = [];
+                var contentBottom = [];
+                var winTop = $(window).scrollTop();
+                var rangeTop = 200;
+                var rangeBottom = 500;
+                $('#Numberlist').find('.scroll a').each(function () {
+                    contentTop.push($($(this).attr('href')).offset().top);
+                    contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
+                })
+                $.each(contentTop, function (i) {
+                    if (winTop > contentTop[i] - rangeTop) {
+                        $('#Numberlist li.scroll')
+                        .removeClass('active')
+                        .eq(i).addClass('active');
+                    }
+                })
+
+            };
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var scroll_start = 0;
+            var startchange = $('#homepage');
+            var offset = startchange.offset();
+            $('#Numberlist').css({ "background-color": "black" });
+            $('#Numberlist li a').css({ "color": "#fff" });
+            $(document).scroll(function () {
+                scroll_start = $(this).scrollTop();
+                if (scroll_start > offset.top) {
+                    $('#Numberlist').css({ "background-color": "white" });
+
+
+                } else {
+                    $('#Numberlist').css({ "background-color": "black" });
+                    $('#Numberlist li a').css({ "color": "#fff" });
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+        jQuery(function($) {'use strict',
+
+
+            // all Parallax Section
+   
+
+            // portfolio filter
+            $(window).load(function(){'use strict',
+            $portfolio_selectors = $('.comm li a');
+                if($portfolio_selectors!='undefined'){
+                    $portfolio = $('.community-items');
+                    $portfolio.isotope({
+                        itemSelector : '.col-sm-3',
+                        layoutMode : 'fitRows'
+                    });
+                    jQuery('.comm a').click(function(){
+                    //$portfolio_selectors.on('click', function(){
+                        $portfolio_selectors.removeClass('active');
+                        $(this).addClass('active');
+                        var selector = $(this).attr('data-filter');
+                        $portfolio.isotope({ filter: selector });
+                        return false;
+                    });
+                }
+            });
+        });
+        });
+    </script>
+
+</body>
+
+<!-- Mirrored from www.themenesia.com/themeforest/cubic-onepage/homepage-rev-slider.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Feb 2017 12:21:29 GMT -->
+</html>
